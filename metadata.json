@@ -1,0 +1,7 @@
+{
+  "name": "Twist Cube AI",
+  "description": "An AI-powered application to help users learn how to solve a Rubik's Cube. It offers different learning methods and difficulty levels, presented in a clear, article-style format, and includes a camera feature to analyze your cube and provide the next steps for solving.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

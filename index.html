@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twist Cube AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0"
+  }
+}
+</script>
+<style>
+  body {
+    background-color: #0D1117;
+    background-image: radial-gradient(circle at center, #1a202c, #0d1117);
+    font-family: 'Poppins', sans-serif;
+  }
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+  .glassmorphism {
+    background-color: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .neon-glow-blue {
+    box-shadow: 0 0 2px #00f6ff, 0 0 5px #00f6ff, 0 0 10px #00f6ff;
+  }
+  .neon-glow-green {
+    box-shadow: 0 0 2px #39ff14, 0 0 5px #39ff14, 0 0 10px #39ff14;
+  }
+  .neon-glow-red {
+    box-shadow: 0 0 2px #ff073a, 0 0 5px #ff073a, 0 0 10px #ff073a;
+  }
+  .neon-text-yellow {
+    text-shadow: 0 0 2px #f8f800, 0 0 5px #f8f800;
+  }
+  .neon-text-blue {
+    text-shadow: 0 0 2px #00f6ff, 0 0 5px #00f6ff;
+  }
+  .neon-border {
+    border: 1px solid;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  .pulse {
+    animation: pulse-glow 2s infinite alternate;
+  }
+  @keyframes pulse-glow {
+    from { box-shadow: 0 0 3px #f8f800, 0 0 6px #f8f800; }
+    to { box-shadow: 0 0 6px #f8f800, 0 0 12px #f8f800; }
+  }
+</style>
+</head>
+  <body class="text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
